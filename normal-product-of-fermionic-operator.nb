@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     37632,       1086]
-NotebookOptionsPosition[     35475,       1010]
-NotebookOutlinePosition[     35850,       1026]
-CellTagsIndexPosition[     35807,       1023]
+NotebookDataLength[     39518,       1160]
+NotebookOptionsPosition[     37131,       1076]
+NotebookOutlinePosition[     37506,       1092]
+CellTagsIndexPosition[     37463,       1089]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -501,7 +501,65 @@ Cell[BoxData[
       RowBox[{"1", ",", "1"}], "\[RightDoubleBracket]"}], ",", "\"\<)\>\""}], 
     "}"}], "]"}]}]], "Input",
  CellChangeTimes->{{3.6572836569535007`*^9, 3.657283663035821*^9}, 
-   3.6579800385583963`*^9}]
+   3.6579800385583963`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"YY1", "[", 
+    RowBox[{"a", ",", "p1"}], "]"}], ",", 
+   RowBox[{"XX1", "[", 
+    RowBox[{"b", ",", "p2"}], "]"}]}], "}"}]], "Input",
+ CellChangeTimes->{{3.660435937509057*^9, 3.6604359508777456`*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+    SubscriptBox["a", 
+     TagBox[
+      FormBox[
+       SubscriptBox["p", "1"],
+       TraditionalForm],
+      TraditionalForm,
+      Editable->True]], ",", 
+    SubsuperscriptBox["b", 
+     SubscriptBox["p", "2"], "\[Dagger]"]}], "}"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{{3.6604359322443113`*^9, 3.6604359512109823`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"YY", "[", 
+     RowBox[{"a", ",", "p1"}], "]"}], ",", 
+    RowBox[{"XX", "[", 
+     RowBox[{"b", ",", "p2"}], "]"}]}], "}"}], "//.", 
+  RowBox[{"GA", "\[Rule]", "Identity"}]}]], "Input",
+ CellChangeTimes->{{3.660435937509057*^9, 3.660435965461787*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+    SubscriptBox["a", 
+     TagBox[
+      FormBox[
+       SubscriptBox["p", "1"],
+       TraditionalForm],
+      TraditionalForm,
+      Editable->True]], ",", 
+    SubsuperscriptBox["b", 
+     SubscriptBox["p", "2"], "\[Dagger]"]}], "}"}], 
+  TraditionalForm]], "Output",
+ CellChangeTimes->{{3.6604359322443113`*^9, 3.6604359657059608`*^9}}]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -511,61 +569,65 @@ Cell["Examples", "Subchapter",
 
 Cell[CellGroupData[{
 
-Cell[TextData[Cell[BoxData[
- FormBox[
-  RowBox[{
-   RowBox[{"\[LeftAngleBracket]", 
-    RowBox[{"0", "|", 
-     RowBox[{
-      RowBox[{"\[Psi]", "(", "x", ")"}], 
+Cell[TextData[{
+ "1. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{"0", "|", 
       RowBox[{
-       OverscriptBox["\[Psi]", "_"], "(", "x", ")"}]}], "|", "0"}], 
-    "\[RightAngleBracket]"}], "=", 
-   RowBox[{"\[LeftAngleBracket]", 
-    RowBox[{"0", "|", 
-     RowBox[{
-      RowBox[{"[", " ", 
+       RowBox[{"\[Psi]", "(", "x", ")"}], 
+       RowBox[{
+        OverscriptBox["\[Psi]", "_"], "(", "x", ")"}]}], "|", "0"}], 
+     "\[RightAngleBracket]"}], "=", 
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{"0", "|", 
+      RowBox[{
+       RowBox[{"[", " ", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"u", "(", 
+           SubscriptBox["p", "2"], ")"}], 
+          SuperscriptBox["e", 
+           RowBox[{
+            RowBox[{"-", 
+             SubscriptBox["ip", "2"]}], "x"}]], 
+          SubscriptBox["a", 
+           SubscriptBox["p", "2"]]}], "+", 
+         RowBox[{
+          RowBox[{"v", "(", 
+           SubscriptBox["p", "2"], ")"}], 
+          SuperscriptBox["e", 
+           RowBox[{
+            SubscriptBox["ip", "2"], "x"}]], 
+          SubsuperscriptBox["b", 
+           SubscriptBox["p", "1"], "\[Dagger]"]}]}], "]"}], "[", 
        RowBox[{
         RowBox[{
-         RowBox[{"u", "(", 
-          SubscriptBox["p", "2"], ")"}], 
+         RowBox[{
+          OverscriptBox["u", "_"], "(", "p", ")"}], 
+         SuperscriptBox["e", 
+          RowBox[{
+           SubscriptBox["ip", "1"], "x"}]], 
+         SubsuperscriptBox["a", 
+          SubscriptBox["p", "1"], "\[Dagger]"]}], "+", 
+        RowBox[{
+         RowBox[{
+          OverscriptBox["v", "_"], "(", "p", ")"}], 
          SuperscriptBox["e", 
           RowBox[{
            RowBox[{"-", 
-            SubscriptBox["ip", "2"]}], "x"}]], 
-         SubscriptBox["a", 
-          SubscriptBox["p", "2"]]}], "+", 
-        RowBox[{
-         RowBox[{"v", "(", 
-          SubscriptBox["p", "2"], ")"}], 
-         SuperscriptBox["e", 
-          RowBox[{
-           SubscriptBox["ip", "2"], "x"}]], 
-         SubsuperscriptBox["b", 
-          SubscriptBox["p", "1"], "\[Dagger]"]}]}], "]"}], "[", 
-      RowBox[{
-       RowBox[{
-        RowBox[{
-         OverscriptBox["u", "_"], "(", "p", ")"}], 
-        SuperscriptBox["e", 
-         RowBox[{
-          SubscriptBox["ip", "1"], "x"}]], 
-        SubsuperscriptBox["a", 
-         SubscriptBox["p", "1"], "\[Dagger]"]}], "+", 
-       RowBox[{
-        RowBox[{
-         OverscriptBox["v", "_"], "(", "p", ")"}], 
-        SuperscriptBox["e", 
-         RowBox[{
-          RowBox[{"-", 
-           SubscriptBox["ip", "1"]}], "x"}]], 
-        SubscriptBox["b", 
-         SubscriptBox["p", "1"]]}]}], "]"}], "|", "0"}], 
-    "\[RightAngleBracket]"}]}], TraditionalForm]],
- FormatType->"TraditionalForm"]], "Section",
+            SubscriptBox["ip", "1"]}], "x"}]], 
+         SubscriptBox["b", 
+          SubscriptBox["p", "1"]]}]}], "]"}], "|", "0"}], 
+     "\[RightAngleBracket]"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Section",
  CellChangeTimes->{{3.6604336705363746`*^9, 3.660434040402901*^9}, {
   3.6604350090230846`*^9, 3.6604350213276205`*^9}, {3.6604350962334237`*^9, 
-  3.660435144371896*^9}, {3.6604352257703*^9, 3.6604352384032135`*^9}}],
+  3.660435144371896*^9}, {3.6604352257703*^9, 3.6604352384032135`*^9}, {
+  3.660435914580656*^9, 3.6604359173291135`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -723,49 +785,53 @@ Cell[BoxData[
 
 Cell[CellGroupData[{
 
-Cell[TextData[Cell[BoxData[
- FormBox[
-  RowBox[{
-   RowBox[{"\[LeftAngleBracket]", 
-    RowBox[{"P", "|", 
-     RowBox[{
-      RowBox[{
-       OverscriptBox["\[Psi]", "_"], "(", "x", ")"}], 
-      RowBox[{"\[Psi]", "(", "x", ")"}]}], "|", "P"}], 
-    "\[RightAngleBracket]"}], "=", 
-   RowBox[{"\[LeftAngleBracket]", 
-    RowBox[{"0", "|", 
-     RowBox[{
+Cell[TextData[{
+ "2. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{"P", "|", 
       RowBox[{
        RowBox[{
-        SubscriptBox["a", "P"], "[", 
+        OverscriptBox["\[Psi]", "_"], "(", "x", ")"}], 
+       RowBox[{"\[Psi]", "(", "x", ")"}]}], "|", "P"}], 
+     "\[RightAngleBracket]"}], "=", 
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{"0", "|", 
+      RowBox[{
+       RowBox[{
         RowBox[{
+         SubscriptBox["a", "P"], "[", 
          RowBox[{
           RowBox[{
            RowBox[{
-            OverscriptBox["u", "_"], "(", "p", ")"}], 
-           SuperscriptBox["e", 
             RowBox[{
-             SubscriptBox["ip", "1"], "x"}]], 
-           SubsuperscriptBox["a", 
-            SubscriptBox["p", "1"], "\[Dagger]"]}], "+"}], "..."}], "]"}], 
-       "[", " ", 
-       RowBox[{
+             OverscriptBox["u", "_"], "(", "p", ")"}], 
+            SuperscriptBox["e", 
+             RowBox[{
+              SubscriptBox["ip", "1"], "x"}]], 
+            SubsuperscriptBox["a", 
+             SubscriptBox["p", "1"], "\[Dagger]"]}], "+"}], "..."}], "]"}], 
+        "[", " ", 
         RowBox[{
          RowBox[{
-          RowBox[{"u", "(", 
-           SubscriptBox["p", "2"], ")"}], 
-          SuperscriptBox["e", 
-           RowBox[{
-            RowBox[{"-", 
-             SubscriptBox["ip", "2"]}], "x"}]], 
-          SubscriptBox["a", 
-           SubscriptBox["p", "2"]]}], "+"}], "..."}], "]"}], 
-      SubsuperscriptBox["a", "P", "\[Dagger]"]}], "|", "0"}], 
-    "\[RightAngleBracket]"}]}], TraditionalForm]],
- FormatType->"TraditionalForm"]], "Section",
+          RowBox[{
+           RowBox[{"u", "(", 
+            SubscriptBox["p", "2"], ")"}], 
+           SuperscriptBox["e", 
+            RowBox[{
+             RowBox[{"-", 
+              SubscriptBox["ip", "2"]}], "x"}]], 
+           SubscriptBox["a", 
+            SubscriptBox["p", "2"]]}], "+"}], "..."}], "]"}], 
+       SubsuperscriptBox["a", "P", "\[Dagger]"]}], "|", "0"}], 
+     "\[RightAngleBracket]"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Section",
  CellChangeTimes->{{3.6604336705363746`*^9, 3.660434040402901*^9}, {
-  3.6604350090230846`*^9, 3.6604350213276205`*^9}}],
+  3.6604350090230846`*^9, 3.6604350213276205`*^9}, {3.660435920341525*^9, 
+  3.6604359208208647`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1048,43 +1114,51 @@ Cell[13628, 353, 258, 7, 45, "Input"],
 Cell[13889, 362, 255, 7, 45, "Input"],
 Cell[14147, 371, 3742, 94, 205, "Input"],
 Cell[17892, 467, 728, 17, 45, "Input"],
-Cell[18623, 486, 684, 17, 45, "Input"]
+Cell[18623, 486, 684, 17, 45, "Input"],
+Cell[CellGroupData[{
+Cell[19332, 507, 254, 7, 45, "Input"],
+Cell[19589, 516, 393, 14, 55, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19344, 508, 98, 1, 102, "Subchapter"],
-Cell[CellGroupData[{
-Cell[19467, 513, 1834, 54, 109, "Section"],
-Cell[CellGroupData[{
-Cell[21326, 571, 1135, 33, 50, "Input"],
-Cell[22464, 606, 1632, 53, 55, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[24133, 664, 1161, 34, 50, "Input"],
-Cell[25297, 700, 579, 19, 47, "Output"]
+Cell[20019, 535, 317, 9, 45, "Input"],
+Cell[20339, 546, 393, 14, 55, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25925, 725, 1401, 42, 109, "Section"],
+Cell[20781, 566, 98, 1, 102, "Subchapter"],
 Cell[CellGroupData[{
-Cell[27351, 771, 1539, 34, 50, "Input"],
-Cell[28893, 807, 1872, 38, 47, "Output"]
+Cell[20904, 571, 1949, 58, 109, "Section"],
+Cell[CellGroupData[{
+Cell[22878, 633, 1135, 33, 50, "Input"],
+Cell[24016, 668, 1632, 53, 55, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30802, 850, 742, 22, 50, "Input"],
-Cell[31547, 874, 648, 21, 47, "Output"]
-}, Open  ]],
-Cell[32210, 898, 326, 10, 73, "Input"],
-Cell[CellGroupData[{
-Cell[32561, 912, 436, 10, 45, "Input"],
-Cell[33000, 924, 733, 22, 47, "Output"]
+Cell[25685, 726, 1161, 34, 50, "Input"],
+Cell[26849, 762, 579, 19, 47, "Output"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33770, 951, 249, 6, 70, "Input"],
-Cell[34022, 959, 540, 16, 44, "Output"]
+Cell[27477, 787, 1505, 46, 109, "Section"],
+Cell[CellGroupData[{
+Cell[29007, 837, 1539, 34, 50, "Input"],
+Cell[30549, 873, 1872, 38, 47, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34599, 980, 368, 9, 45, "Input"],
-Cell[34970, 991, 465, 14, 44, "Output"]
+Cell[32458, 916, 742, 22, 50, "Input"],
+Cell[33203, 940, 648, 21, 47, "Output"]
+}, Open  ]],
+Cell[33866, 964, 326, 10, 73, "Input"],
+Cell[CellGroupData[{
+Cell[34217, 978, 436, 10, 45, "Input"],
+Cell[34656, 990, 733, 22, 47, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35426, 1017, 249, 6, 70, "Input"],
+Cell[35678, 1025, 540, 16, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36255, 1046, 368, 9, 45, "Input"],
+Cell[36626, 1057, 465, 14, 44, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
